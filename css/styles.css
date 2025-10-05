@@ -117,9 +117,9 @@ a.current{
    overflow: hidden;
   border: 0;
   padding: 0;
-  white-space: nowrap; /* запобігає переносу тексту */
+  white-space: nowrap; 
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
 }
 
 /* === HEADER (mobile first)  
@@ -302,7 +302,7 @@ a.current{
 .mobile-menu.is-open {
 opacity: 1;
 visibility: visible;
-pointer-events: auto;
+pointer-events: initial;
 }
 
 .mobile-menu__panel {
@@ -810,8 +810,9 @@ body.no-scroll { overflow: hidden; }
 
 /*====FORMS FOOTER===========*/
 .footer-subscribe {
-  flex: 0 0 auto; 
-  width: auto;  
+  flex: 1 1 100%;
+  width: 100%; 
+  max-width: none; 
 }
 
 .subscribe-title {
@@ -960,7 +961,6 @@ body.no-scroll { overflow: hidden; }
     flex: 0 0 453px;             
     max-width: 453px;
   }
-
 }
 
 
@@ -984,7 +984,7 @@ body.no-scroll { overflow: hidden; }
 .backdrop.is-open { 
   opacity: 1; 
   visibility: visible; 
-  pointer-events: auto; 
+  pointer-events:  initial; 
 }
 
 /* === MODAL: mobile-first 
