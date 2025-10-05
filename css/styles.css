@@ -811,7 +811,7 @@ body.no-scroll { overflow: hidden; }
 /*====FORMS FOOTER===========*/
 .footer-subscribe {
   flex: 0 0 auto; 
-  max-width: auto;  
+  width: auto;  
 }
 
 .subscribe-title {
